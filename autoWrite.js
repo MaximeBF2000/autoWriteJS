@@ -9,7 +9,7 @@ async function autoWrite(selector, options){
   const speed = options.speed ?? 100
   const strings_arr = options.strings ?? []
   const loop = options.loop ?? false
-  const breakTime = options.breakTime ?? 0
+  const breakTime = options.breakTime ?? 500
 
 
   // Styling & Cursor
