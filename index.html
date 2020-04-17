@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0;box-sizing: border-box; font-family: "Montserrat";}
+    html, body{width: 100%;height: 100%;}
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1{
+      margin-bottom: 2rem;
+    }
+    a{
+      all: unset;
+      background-color: #0058e6;
+      color: #fff;
+      padding: .5rem 2rem;
+      margin-top: 2rem;
+      border-radius: .25rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>AutoWrite JS</h1>
+  <p class="write"></p>
+  <a href="./app.js" download>Download</a>
+
+  <script src="./app.js"></script>
+  <script>
+    autoWrite(".write", {
+      strings: [
+        "Ecriture automatique",
+        "Plusieurs phrases possibles",
+        "Gestion de la vitesse, du temps de pause...",
+        "... et possibilité de répétition infini"
+      ],
+      speed: 60,
+      breakTime: 1000,
+      loop: true
+    })
+  </script>
+</body>
+</html>
