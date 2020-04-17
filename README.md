@@ -35,3 +35,5 @@
   - Default : 500
 - loop : determine if the effect loop infinitly or not
   - Default : false
+
+[Download Here](./autowrite.js)
