@@ -33,5 +33,5 @@
   - Default : 100
 - breakTime : determine the pause time before deleting caracteres
   - Default : 500
--  loop : determine if the effect loop infinitly or not
+- loop : determine if the effect loop infinitly or not
   - Default : false
