@@ -20,19 +20,26 @@
       all: unset;
       background-color: #0058e6;
       color: #fff;
+      margin: 0 1rem;
       padding: .5rem 2rem;
-      margin-top: 2rem;
       border-radius: .25rem;
       cursor: pointer;
+    }
+    .row{
+      margin-top: 2rem;
+      display: flex;
     }
   </style>
 </head>
 <body>
   <h1>AutoWrite JS</h1>
   <p class="write"></p>
-  <a href="./autoWrite.js" download>Download</a>
+  <div class="row">
+    <a href="./autowrite.js" download>Download</a>
+    <a href="https://github.com/MaximeBF2000/autoWriteJS" target="blank">Documentation</a>
+  </div>
 
-  <script src="./autoWrite.js"></script>
+  <script src="./autowrite.js"></script>
   <script>
     autoWrite(".write", {
       strings: [
